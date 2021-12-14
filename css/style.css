@@ -97,13 +97,19 @@ h3{
     line-height: 119%;
 }
 .address{
+    font-size: 14px;
+    line-height: 171%;
+
     color:var(--backgroundcolor)
 }
 .contacts-footer{
+    font-size: 14px;
+    line-height: 171%;
+    
     color: var(--footercolor);
  }
  .logofooter{
-    font-family: Raleway;
+    font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -111,4 +117,28 @@ h3{
 
     color: var(--backgroundcolor);
     text-decoration: none;
+ }
+
+ .button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+
+    color:var(--secondarycolor) ;
+    cursor: pointer;
+ }
+ .button:focus,
+ .button:hover{
+     color: var(--backgroundcolor);
+ }
+ .list-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height:200%;
+
+ }
+ .list-text{
+    font-size: 16px;
+    line-height: 187%;
+    color:var(--maincolor);
  }
