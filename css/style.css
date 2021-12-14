@@ -4,6 +4,7 @@
     --accentcolor:#2196F3;
     --backgroundcolor:#FFFFFF;
     --footercolor: rgba(255, 255, 255, 0.6);
+    --hovercolor:#188CE8;
 }
 body{font-family:'roboto' ,sans-serif;
     color: var(--maincolor);}
@@ -29,7 +30,7 @@ h3{
    
 }
 .logoweb{
-    color: #2196F3;
+    color: var(--accentcolor);
     text-decoration: none;
 }
 .navigation{
@@ -54,12 +55,17 @@ h3{
 .contacts:focus{
     color:var(--accentcolor);
 }
+.hero{
+    background: #2F303A;
+}
 .main-title{
+    text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     line-height: 136%;
+    color: var(--backgroundcolor);
 }
-.main-title,.second-title{
+.second-title{
     color:var(--secondarycolor)
 }
 .btn{
@@ -68,9 +74,18 @@ h3{
     line-height: 187%;
 
     color:var(--backgroundcolor);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border:none;
     cursor: pointer;
 }
+.btn:hover,
+.btn:focus{
+    background:var(--hovercolor);
+}
 .title-list{
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
     line-height: 114%;
@@ -96,7 +111,11 @@ h3{
     font-size: 16px;
     line-height: 119%;
 }
+.footer{
+   background: #2F303A;
+}
 .address{
+    font-style: inherit;
     font-size: 14px;
     line-height: 171%;
 
@@ -125,11 +144,18 @@ h3{
     line-height: 162%;
 
     color:var(--secondarycolor) ;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+
     cursor: pointer;
+   
+    
  }
  .button:focus,
  .button:hover{
      color: var(--backgroundcolor);
+     background-color:var(--accentcolor) ;
  }
  .list-title{
     font-weight: bold;
